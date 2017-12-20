@@ -1,0 +1,2 @@
+<li *ngIf="!isAuthenticated()" (click)="login()">Sign-in</li>
+<li *ngIf="isAuthenticated()" (click)="logout()">Sign-out</li>

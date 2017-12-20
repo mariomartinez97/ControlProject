@@ -1,0 +1,31 @@
+<div class="col-lg-8 col-md-12">
+  <div class="card" >
+      <div class="card-header" >
+      </div>
+      <div class="card-content table-responsive">
+          <table class="table table-hover">
+              <thead class="text-warning">
+                  <tr>
+                      <th>Name</th>
+                      <th>Email</th>
+                      <th>Telefono</th>
+                      <th>Fecha</th>   
+                      <th>Add</th>                   
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr *ngFor="let p of info; let i = index">
+                          
+                      <td>{{p.nombre}}</td>
+                      <td>{{p.email}}</td>
+                      <td>{{p.telefono}}</td>
+                      <td>{{p.fecha}}</td>
+                      <!-- <td (click)='addPedido()'>Prueba</td> -->
+                  </tr>
+              </tbody>
+          </table>
+      </div>
+  </div>
+  <button class="btn btn-lg btn-primary" (click)="addPedido()">PRUEBA</button>
+  <li><a><br-auth></br-auth></a></li>
+  
